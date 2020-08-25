@@ -66,6 +66,10 @@ header {
             text-transform: uppercase;
         }
 
+        h1 {
+            font-size: 2.4rem;
+        }
+
         h2 {
             font-size: 1.4rem;
         }
@@ -75,7 +79,7 @@ header {
             font-weight: bold;
             display: block;
             text-decoration: none;
-            background: url('../../public/svg/chevron-right.svg') no-repeat;
+            background: url("../../public/svg/chevron-right.svg") no-repeat;
             background-size: 16px;
             background-position: 0 2px;
             padding-left: 1.2em;
@@ -106,7 +110,7 @@ header {
 
         p {
             width: 70%;
-            font-size: 1.2rem;
+            font-size: 1.0rem;
             margin-bottom: 0;
         }
     }
@@ -132,7 +136,7 @@ header {
         input {
             width: calc(100% - 2em);
             padding: 1em;
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             margin-bottom: 1em;
         }
 
@@ -144,5 +148,45 @@ header {
             background: black;
             margin-bottom: 1em;
         }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    header {
+        background: none;
+
+        nav ul {
+            li a {
+                color: black;
+            }
+        }
+    }
+
+    .wrapper {
+        grid-template-columns: 70% auto;
+        grid-template-rows: 60% auto;
+        grid-template-areas:
+            "main featured"
+            "main subscribe";
+        height: 100vh;
+    }
+
+    section.main {
+        grid-area: main;
+    }
+
+    // section.featured {
+    //     padding-top: 4em;
+    // }
+    section {
+        display: grid;
+        grid-template-rows: auto;
+        align-items: center;
     }
 }

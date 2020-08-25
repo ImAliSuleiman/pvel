@@ -10961,6 +10961,10 @@ header nav ul li a {
   text-transform: uppercase;
 }
 
+.wrapper section h1 {
+  font-size: 2.4rem;
+}
+
 .wrapper section h2 {
   font-size: 1.4rem;
 }
@@ -11000,7 +11004,7 @@ header nav ul li a {
 
 .wrapper section.main p {
   width: 70%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 0;
 }
 
@@ -11034,5 +11038,38 @@ header nav ul li a {
   color: white;
   background: black;
   margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  header {
+    background: none;
+  }
+
+  header nav ul li a {
+    color: black;
+  }
+
+  .wrapper {
+    grid-template-columns: 70% auto;
+    grid-template-rows: 60% auto;
+    grid-template-areas: "main featured" "main subscribe";
+    height: 100vh;
+  }
+
+  section.main {
+    grid-area: main;
+  }
+
+  section {
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+  }
 }
 
