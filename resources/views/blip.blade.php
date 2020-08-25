@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blip</title>
+  <title>Mtabe</title>
 </head>
+
+<link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
 
 <body>
 
   <header>
-    <a href="#" class="logo">Blip</a>
+    <a href="#" class="logo">Mtabe</a>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -25,12 +27,12 @@
     <section class="main">
       <div class="inner">
         <div class="title-clipper">
-          <h1>Go Blip</h1>
+          <h1>Go Mtabe</h1>
         </div>
 
         <div class="sub-clipper">
           <p>Join today and start developing software solutions like a pro!</p>
-          <a href="#" class="read-btn primary">Start Coding</a>
+          <a href="#" class="read-btn primary-btn">Start Coding</a>
         </div>
       </div>
     </section>
@@ -57,7 +59,7 @@
         </div>
 
         <div class="sub-clipper">
-          <p>Get the lastest updates about Blip courses, offers, and opportunites.</p>
+          <p>Get the lastest updates about Mtabe courses, offers, and opportunites.</p>
           <input type="text" name="email" placeholder="Email Address">
           <button class="cta">Subscribe Now</button>
         </div>

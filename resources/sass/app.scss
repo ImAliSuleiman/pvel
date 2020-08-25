@@ -1,8 +1,144 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+
+$color-amber: #ffd500;
+
+body,
+html {
+    margin: 0px;
+}
+
+body {
+    height: 100%;
+    font-family: "Montserrat";
+}
+
+header {
+    position: absolute;
+    padding: 1em;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    // width: calc(100% - 2em);
+    // background: white;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a.logo {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        li a {
+            padding: 1em;
+        }
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+
+    section {
+        padding: 2em;
+
+        h1,
+        h2,
+        .read-btn {
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        .read-btn {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            // background: url('../../public/img/arrow.svg') no-repeat;
+            background-size: 8px;
+            background-position: 0 1px;
+            padding-left: 1em;
+        }
+
+        .primary-btn {
+            padding: 1.5em 1.5em 1.5em calc(2em + 20px);
+            background-position: 3em;
+            border: 1px solid lightblue;
+            display: inline-block;
+            margin-top: 2em;
+            margin-left: -2.1em;
+            color: white;
+        }
+
+        .clipper {
+            overflow: hidden;
+        }
+    }
+
+    section.main {
+        padding-top: 8em;
+        // padding-bottom: 4em;
+        background: url("../../public/img/dev-group.jpg");
+        background-size: cover;
+        color: white;
+
+        p {
+            width: 70%;
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+    }
+
+    section.featured,
+    section.subscribe {
+        font-size: 0.8rem;
+        line-height: 1.6em;
+    }
+
+    section.featured {
+        background: $color-amber;
+
+        .read-btn {
+            margin-top: 2em;
+            display: block;
+        }
+    }
+
+    section.subscribe {
+        input {
+            width: calc(100% - 2em);
+            padding: 1em;
+            font-family: 'Montserrat';
+            margin-bottom: 1em;
+        }
+
+        button {
+            width: calc(100% - 2em);
+            padding: 1em;
+            border: none;
+            color: white;
+            background: black;
+            margin-bottom: 1em;
+        }
+    }
+}

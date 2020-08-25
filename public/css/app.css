@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
@@ -10902,5 +10902,133 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+body,
+html {
+  margin: 0px;
+}
+
+body {
+  height: 100%;
+  font-family: "Montserrat";
+}
+
+header {
+  position: absolute;
+  padding: 1em;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header a.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  padding: 1em;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.wrapper section {
+  padding: 2em;
+}
+
+.wrapper section h1,
+.wrapper section h2,
+.wrapper section .read-btn {
+  text-transform: uppercase;
+}
+
+.wrapper section h2 {
+  font-size: 1.4rem;
+}
+
+.wrapper section .read-btn {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  background-size: 8px;
+  background-position: 0 1px;
+  padding-left: 1em;
+}
+
+.wrapper section .primary-btn {
+  padding: 1.5em 1.5em 1.5em calc(2em + 20px);
+  background-position: 3em;
+  border: 1px solid lightblue;
+  display: inline-block;
+  margin-top: 2em;
+  margin-left: -2.1em;
+  color: white;
+}
+
+.wrapper section .clipper {
+  overflow: hidden;
+}
+
+.wrapper section.main {
+  padding-top: 8em;
+  background: url(/images/dev-group.jpg?204f6b99f7c7d2cb0411e75b396c88fb);
+  background-size: cover;
+  color: white;
+}
+
+.wrapper section.main p {
+  width: 70%;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.wrapper section.featured,
+.wrapper section.subscribe {
+  font-size: 0.8rem;
+  line-height: 1.6em;
+}
+
+.wrapper section.featured {
+  background: #ffd500;
+}
+
+.wrapper section.featured .read-btn {
+  margin-top: 2em;
+  display: block;
+}
+
+.wrapper section.subscribe input {
+  width: calc(100% - 2em);
+  padding: 1em;
+  font-family: "Montserrat";
+  margin-bottom: 1em;
+}
+
+.wrapper section.subscribe button {
+  width: calc(100% - 2em);
+  padding: 1em;
+  border: none;
+  color: white;
+  background: black;
+  margin-bottom: 1em;
 }
 
