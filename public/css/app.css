@@ -10968,20 +10968,23 @@ header nav ul li a {
 .wrapper section .read-btn {
   color: black;
   font-weight: bold;
+  display: block;
   text-decoration: none;
-  background-size: 8px;
-  background-position: 0 1px;
-  padding-left: 1em;
+  background: url(/images/chevron-right.svg?9c59704b1de34c9fbb54c100b907ac85) no-repeat;
+  background-size: 16px;
+  background-position: 0 2px;
+  padding-left: 1.2em;
 }
 
 .wrapper section .primary-btn {
   padding: 1.5em 1.5em 1.5em calc(2em + 20px);
-  background-position: 3em;
+  background-position: 2em 1.75em;
   border: 1px solid lightblue;
   display: inline-block;
   margin-top: 2em;
   margin-left: -2.1em;
   color: white;
+  fill: lightblue;
 }
 
 .wrapper section .clipper {
@@ -11014,6 +11017,7 @@ header nav ul li a {
 .wrapper section.featured .read-btn {
   margin-top: 2em;
   display: block;
+  background-position: 0 1px;
 }
 
 .wrapper section.subscribe input {

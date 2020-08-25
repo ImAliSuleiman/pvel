@@ -73,21 +73,23 @@ header {
         .read-btn {
             color: black;
             font-weight: bold;
+            display: block;
             text-decoration: none;
-            // background: url('../../public/img/arrow.svg') no-repeat;
-            background-size: 8px;
-            background-position: 0 1px;
-            padding-left: 1em;
+            background: url('../../public/svg/chevron-right.svg') no-repeat;
+            background-size: 16px;
+            background-position: 0 2px;
+            padding-left: 1.2em;
         }
 
         .primary-btn {
             padding: 1.5em 1.5em 1.5em calc(2em + 20px);
-            background-position: 3em;
+            background-position: 2em 1.75em;
             border: 1px solid lightblue;
             display: inline-block;
             margin-top: 2em;
             margin-left: -2.1em;
             color: white;
+            fill: lightblue;
         }
 
         .clipper {
@@ -121,6 +123,8 @@ header {
         .read-btn {
             margin-top: 2em;
             display: block;
+            // background-color: black;
+            background-position: 0 1px;
         }
     }
 
