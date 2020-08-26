@@ -25,3 +25,15 @@ Route::get('/intro', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/lte', function () {
+    return view('lte_dash');
+});
+
+Route::get('/lte-login', function () {
+    return view('lte_login');
+});
+
+Route::get('/lte-register', function () {
+    return view('lte_register');
+});
