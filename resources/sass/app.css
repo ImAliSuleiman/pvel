@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);body,
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body,
 html {
   margin: 0px;
 }
@@ -12,8 +13,12 @@ header {
   position: absolute;
   padding: 1em;
   z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
 }
 
@@ -29,8 +34,11 @@ header a.logo {
 
 header nav ul {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -41,8 +49,10 @@ header nav ul li a {
 }
 
 .wrapper {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
 }
 
 .wrapper section {
@@ -68,7 +78,7 @@ header nav ul li a {
   font-weight: bold;
   display: block;
   text-decoration: none;
-  background: url(/images/chevron-right.svg?9c59704b1de34c9fbb54c100b907ac85) no-repeat;
+  background: url("../../public/svg/chevron-right.svg") no-repeat;
   background-size: 16px;
   background-position: 0 2px;
   padding-left: 1.2em;
@@ -91,14 +101,14 @@ header nav ul li a {
 
 .wrapper section.main {
   padding-top: 8em;
-  background: url(/images/dev-group.jpg?204f6b99f7c7d2cb0411e75b396c88fb);
+  background: url("../../public/img/dev-group.jpg");
   background-size: cover;
   color: white;
 }
 
 .wrapper section.main p {
   width: 70%;
-  font-size: 1rem;
+  font-size: 1.0rem;
   margin-bottom: 0;
 }
 
@@ -144,26 +154,31 @@ header nav ul li a {
   header {
     background: none;
   }
-
   header nav ul li a {
     color: black;
   }
-
   .wrapper {
-    grid-template-columns: 70% auto;
-    grid-template-rows: 60% auto;
-    grid-template-areas: "main featured" "main subscribe";
+    -ms-grid-columns: 70% auto;
+        grid-template-columns: 70% auto;
+    -ms-grid-rows: 60% auto;
+        grid-template-rows: 60% auto;
+        grid-template-areas: "main featured" "main subscribe";
     height: 100vh;
   }
-
   section.main {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
     grid-area: main;
   }
-
   section {
+    display: -ms-grid;
     display: grid;
-    grid-template-rows: auto;
-    align-items: center;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
-
+/*# sourceMappingURL=app.css.map */

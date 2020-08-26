@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+body,
+html {
+  margin: 0px;
+}
+
+body {
+  height: 100%;
+  font-family: "Nunito";
+}
+
+header {
+  position: absolute;
+  padding: 1em;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header a.logo {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.wrapper section {
+  padding: 2em;
+}
+
+.wrapper section.main {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.wrapper section.main .form {
+  width: 40%;
+  margin: auto auto;
+}
+
+.wrapper section.main input {
+  width: calc(100% - 2em);
+  padding: 1em;
+  font-family: "Nunito";
+  margin-bottom: 1em;
+}
+
+.wrapper section.main button {
+  width: 100%;
+  padding: 1em;
+  border: none;
+  color: white;
+  background: black;
+  margin-bottom: 1em;
+  font-family: "Nunito";
+}
+/*# sourceMappingURL=login.css.map */
