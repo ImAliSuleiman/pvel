@@ -37,3 +37,11 @@ Route::get('/lte-login', function () {
 Route::get('/lte-register', function () {
     return view('lte_register');
 });
+
+Route::get('/prime-login', function () {
+    return view('prime_login');
+});
+
+Route::get('/shop', function () {
+    return view('shop');
+});
