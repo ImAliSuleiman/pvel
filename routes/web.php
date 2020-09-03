@@ -45,3 +45,7 @@ Route::get('/prime-login', function () {
 Route::get('/shop', function () {
     return view('shop');
 });
+
+Route::any('{slug}', function () {
+    return view('home');
+});

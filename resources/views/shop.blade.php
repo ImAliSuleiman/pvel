@@ -12,7 +12,7 @@
 
 <body>
     <!-- <div class="nav-bar"></div> -->
-    <div id="app">
+    <div id="shop">
         <!-- <ul>
             <li>
                 <Product />

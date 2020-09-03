@@ -18,8 +18,12 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import router from './router';
+
 Vue.component('Product', require('./components/Product.vue').default);
+Vue.component('HomePage', require('./components/pages/home.vue').default);
 
 const vm = new Vue({
     el: "#app",
-})
+    router
+});
