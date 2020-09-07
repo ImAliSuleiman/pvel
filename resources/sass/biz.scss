@@ -83,6 +83,7 @@
 // }
 .services {
     padding: 2em;
+    background: white;
 
     h4 {
         padding: 16px;
@@ -125,4 +126,19 @@
     margin-bottom: 1em;
     display: block;
     transform: translateY(8px);
+}
+
+
+#about-us {
+    background: #f8f9fa;
+    padding: 4em 0;
+
+    ul li {
+        margin: 1em 0;
+        text-align: left;
+    }
+    
+    h4 {
+        margin-top: 2em;
+    }
 }

@@ -11140,6 +11140,7 @@ header nav ul li a {
 
 .services {
   padding: 2em;
+  background: white;
 }
 
 .services h4 {
@@ -11181,5 +11182,19 @@ header nav ul li a {
   margin-bottom: 1em;
   display: block;
   transform: translateY(8px);
+}
+
+#about-us {
+  background: #f8f9fa;
+  padding: 4em 0;
+}
+
+#about-us ul li {
+  margin: 1em 0;
+  text-align: left;
+}
+
+#about-us h4 {
+  margin-top: 2em;
 }
 

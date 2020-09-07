@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="col-md-6 text-center">
-                    <img src="images/biz-team-work.png" alt="Biz people picture" class="image-fluid" width="80%">
+                    <img src="images/biz-team-work.png" alt="Biz people picture" class="img-fluid" width="80%">
                 </div>
             </div>
         </div>
@@ -77,6 +77,28 @@
             </div>
 
             <button type="button" class="btn btn-primary">All Services</button>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div class="container">
+            <h1 class="title text-center">Why Biz Biz?</h1>
+
+            <div class="row">
+                <div class="col-md-6 about-us">
+                    <h4 class="about-title">Lorem ipsum minima</h4>
+                    <ul>
+                        <li>Lorem ipsum sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor, consectetur adipisicing sit.</li>
+                        <li>Lorem ipsum amet consectetur adipisicing amet.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="images/biz-team-work.png" alt="Biz people picture" class="img-fluid" width="60%">
+                </div>
+            </div>
         </div>
     </section>
 </body>
