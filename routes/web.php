@@ -46,6 +46,10 @@ Route::get('/shop', function () {
     return view('shop');
 });
 
+Route::get('/biz', function () {
+    return view('biz');
+});
+
 Route::any('{slug}', function () {
     return view('home');
 });
