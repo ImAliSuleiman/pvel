@@ -128,17 +128,116 @@
     transform: translateY(8px);
 }
 
-
 #about-us {
     background: #f8f9fa;
     padding: 4em 0;
 
-    ul li {
-        margin: 1em 0;
-        text-align: left;
+    ul {
+        margin-left: 1em;
+
+        li {
+            margin: 1em 0;
+            text-align: left;
+        }
     }
-    
+
     h4 {
         margin-top: 2em;
+    }
+}
+
+#testmonial {
+    margin: 100px 0;
+}
+
+.testimonial {
+    border-left: 4px solid #5f1782;
+    text-align: left;
+    margin: 80px 0;
+
+    img {
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+        margin: 0 8px;
+    }
+
+    .user-details {
+        display: inline-block;
+        font-size: 14px;
+    }
+}
+
+#social-media {
+    // margin-top: 4em;
+    padding-top: 2em;
+    background: white;
+
+    p {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+
+    .social-icons img {
+        width: 64px;
+        transition: 400ms;
+        margin: 0 1em;
+    }
+
+    .social-icons a:hover img {
+        width: 72px;
+        transform: translateY(-16px);
+    }
+}
+
+#footer {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color: white;
+
+    .footer-box {
+        padding: 2em;
+
+        .fa {
+            font-size: 24px;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            margin-right: 8px;
+        }
+
+        .btn-primary {
+            border: none;
+            border-radius: 24px;
+            color: white;
+            // color: #a517ba;
+            box-shadow: none;
+            background-image: linear-gradient(to right, #a517ba, #5f1782);
+            // background-image: linear-gradient(to right, #fafafa, #f5f5f5);
+            padding: 8px 32px;
+            margin: 1em 0;
+        }
+
+        .form-control {
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            max-width: 250px;
+        }
+
+        .footer-title {
+            font-weight: 600 !important;
+        }
+    }
+
+    hr {
+        background-color: white;
+    }
+
+    .copyright {
+        text-align: center;
+        margin: 0;
+        padding-bottom: 24px;
     }
 }
