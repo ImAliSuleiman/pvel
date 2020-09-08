@@ -19,16 +19,19 @@
             <div class="collapse navbar-collapse" id="navbarNav" ml>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a data-scroll class="nav-link" href="#banner">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a data-scroll class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonials</a>
+                        <a data-scroll class="nav-link" href="#about-us">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a data-scroll class="nav-link" href="#testimonial">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link" href="#footer">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -43,6 +46,7 @@
                     <p class="promo-title">Best Biz Platform</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero magnam at inventore, laboriosam earum, voluptatum debitis magni molestiae minima, alias totam non. Maxime, velit libero sit porro asperiores molestiae aliquid, consequuntur laboriosam accusamus corrupti corporis quae optio sint eligendi vel.</p>
                     <a href=""><img src="" class="icon-btn">Watch Demo</a>
+                    <!-- <a href="" ><i class="fa fa-play"> Watch Demo</a> -->
                 </div>
 
                 <div class="col-md-6 text-center">
@@ -53,7 +57,7 @@
         <img src="images/wave.png" alt="Wave" class="shape-wave" width="100%">
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="container text-center">
             <!-- <div class="text-center"> -->
             <h1 class="title">What We Do?</h1>
@@ -160,6 +164,12 @@
         </div>
     </section>
 
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 400
+        });
+    </script>
 </body>
 
 </html>
