@@ -10,9 +10,10 @@
 </head>
 
 <body>
+    <div id="app">
     <section id="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-light>
-            <a class=" navbar-brand" href="#">Biz</a>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Biz</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,7 +36,10 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
+
+        <Navie></Navie>
+
     </section>
 
     <!-------------------------- BANNER -------------------------->
@@ -46,7 +50,6 @@
                     <p class="promo-title">Best Biz Platform</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero magnam at inventore, laboriosam earum, voluptatum debitis magni molestiae minima, alias totam non. Maxime, velit libero sit porro asperiores molestiae aliquid, consequuntur laboriosam accusamus corrupti corporis quae optio sint eligendi vel.</p>
                     <a href=""><img src="" class="icon-btn">Watch Demo</a>
-                    <!-- <a href="" ><i class="fa fa-play"> Watch Demo</a> -->
                 </div>
 
                 <div class="col-md-6 text-center">
@@ -164,12 +167,15 @@
         </div>
     </section>
 
+    </div>
 
-    <script>
+    <script src="{{ mix('js/app.js') }}"></script>
+
+    <!-- <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 400
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

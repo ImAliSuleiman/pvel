@@ -7,7 +7,53 @@
     position: sticky;
     top: 0;
     z-index: 10;
+
+    // Navie {
+    //     .navbar {
+    //         background-image: linear-gradient(to right, #a517ba, #5f1782);
+    //         padding: 0 !important;
+    //     }
+        
+    //     .navbar-brand {
+    //         padding-left: 1em;
+    //         text-decoration: none;
+    //         font-weight: 600;
+        
+    //         // a {
+    //         //     color: white;
+    //         //     text-decoration: none;
+    //         //     font-weight: 600;
+    //         // }
+        
+    //         img {
+    //             // padding-left: 1em;
+    //             height: 40px;
+    //         }
+    //     }
+        
+    //     // .navbar-brand img {
+    //     //     height: 40px;
+    //     //     padding-left: 1em;
+    //     // }
+        
+    //     .navbar-nav li {
+    //         padding: 0 8px;
+        
+    //         a {
+    //             color: white;
+    //             text-decoration: none;
+    //             font-weight: 600;
+    //             float: right;
+    //             text-align: left;
+    //         }
+    //     }
+        
+    //     .navbar-toggler {
+    //         outline: none;
+    //     }
+    // }
 }
+
 
 .navbar {
     background-image: linear-gradient(to right, #a517ba, #5f1782);
@@ -52,6 +98,8 @@
     outline: none;
 }
 
+
+
 #banner {
     color: white;
     padding-top: 5%;
@@ -70,7 +118,7 @@
 .promo-title {
     font-size: 40px;
     font-weight: 600;
-    padding-top: 2em;
+    padding-top: 32px;
 }
 
 .icon-btn {
@@ -123,7 +171,7 @@
     width: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1em;
+    margin-bottom: 16px;
     display: block;
     transform: translateY(8px);
 }
